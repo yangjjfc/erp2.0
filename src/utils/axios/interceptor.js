@@ -8,6 +8,7 @@ import { Notification } from 'element-ui';
 class Interceptor {
     constructor () {
         this.req = {};// 防止同个链接连续请求
+        this.init();
     }
     getParams (obj) {    
         var result = [],

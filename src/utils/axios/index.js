@@ -5,8 +5,7 @@ import axios from 'axios';
 import Interceptor from './interceptor';
 import store from '@/store';
 // 初始化拦截器
-let interceptor = new Interceptor();
-interceptor.init();
+new Interceptor(); // eslint-disable-line no-new
 /**
  * 基础配置
  * 更多配置请参考 https://github.com/axios/axios
